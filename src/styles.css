@@ -24,9 +24,10 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 5px;
-  border: 3px solid rgb(252, 255, 0);
+  background-color: rgb(252, 255, 0);
   border-radius: 5px;
   margin-top: 20px;
+  transition: 200ms ease-in;
 }
 
 .main-link a {
@@ -36,12 +37,22 @@ h1 {
   color: var(--main-link-color);
 }
 
-.text-1 {
+.main-link a:hover {
+  color: rgb(255, 168, 168);
+}
+
+.text-1,
+.text-2 {
   display: block;
   margin: 20px;
   padding: 20px 3px;
   text-align: center;
   line-height: 30px;
+  color: rgba(54, 25, 25, 0.941);
+}
+
+.text-2 {
+  border-left: 2px solid rgb(252, 255, 0);
 }
 
 .link {
